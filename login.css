@@ -1,0 +1,35 @@
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+ /* h1{
+    text-align: center;
+    font-size: large;
+    
+}
+div{
+    text-align: center;
+    padding-left: 10px;
+    margin: 0ch; */
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: seagreen;
+ }
+ div{
+    width: 420px;
+    color: rgb(8, 202, 31);
+    background-color:  rgb(255, 255, 255);
+ }
+ div h1{
+    text-align: center;
+    font-size: 37px;
+ }
+ 
+ 
