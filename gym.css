@@ -1,8 +1,23 @@
-h1{
-    text-align: center;
-    color: #88bdbc;
-    
-    
+.bar{ 
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+ 
+.bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    text-transform: uppercase;
+    background: scroll;
+}
+.bar ul li a{
+    color: rgb(26, 44, 79);
+    text-decoration: none;
 }
 
 body{
@@ -18,48 +33,25 @@ h1{
     color: white;
     padding: 20px;
     max-height: fit-content;   
+    margin: 0%;
 }
-.nav {
-    background-color: rgb(49, 88, 65);
-    display:flex;
-    justify-content:center;
-    
-
-}
-.nav a{
-    color: white;
+h2{
     text-align: center;
-    padding: 15px 21px;
-    text-decoration: none;
+    background-color: rgb(53, 81, 80);
+    padding: 20px;
+    max-height: fit-content; 
+    margin: 0%;
 }
-.nav a:hover{
-    background-color: rgb(8, 63, 34);
-}
-.flight{
-    background-size: cover;
-    /* background-image: url(istockphoto-155439315-612x612.jpg); */
-    height: 700px;
-    align-items: first baseline;
-    color: white;
-    display: flex;
-    text-shadow: 3px 3px 5px black;
-    justify-content: center;
-}
-.flight h1{
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
+ 
 .content{
     text-align: center;
     padding: 30px;
 }
-.content h2{
-    color: rgb(8, 16, 92);
-
-}
+ 
 .content img{
     height: auto;
     width: 100%;
+    /* Gym Area picture  */
 }
 footer{
     text-align: center;
@@ -69,3 +61,4 @@ footer{
     background-color: white;
     padding: 20px   ;
 }
+ 

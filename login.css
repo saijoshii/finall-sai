@@ -21,6 +21,7 @@ div{
     align-items: center;
     min-height: 100vh;
     background: seagreen;
+    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.72)), url(login\ image.avif);
  }
  div{
     width: 420px;
