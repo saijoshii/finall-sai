@@ -1,6 +1,6 @@
 .house{
     height: 100vh;
-    width: 100%;
+    width: 100%; 
     background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.72)), url(bbbbb.jpg);
     background-size: cover;
     background-position: center;
@@ -29,6 +29,7 @@
     display: inline-block;
     margin: 0 40px;
     text-transform: uppercase;
+    
 }
 .bar ul li a{
     color: white;
@@ -37,4 +38,10 @@
 .logo {
     width: 1px;
     height: 0;
+}
+.img{
+    width: 530px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    position: relative;
 }

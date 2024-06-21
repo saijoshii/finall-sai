@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    margin: 3px 5px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative; /* arranges height(grey color wala)*/
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:grey;
+    /* opacity: 0.4; */
+    z-index: -1; /* content(home,about bla bla) will show*/
+}
+#navbar ul li{
+    /* color: ; */
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block; /* by default display inline huncha so block, also for padding*/
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    background: white;
+    color: black;
+}
+#home{ /* HOME SECTION*/
+    padding:3px 200px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 400px;   
+}
+#home::before{  
+    content: "";
+    position: absolute;
+    background-image: url(bbbbb.jpg);
+    height: 100%;
+    width: 100%;
+    /* background:grey; */
+    opacity: 0.78;
+    z-index: -1; 
+}
+#home h1{
+    text-align: center;
+    color: white;
+}
+#home p{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+.heading{
+    font-size: 3.9rem;
+    padding: 10px;
+  
+}
+.btn{
+    border: 2px solid white;
+    color: white;
+    font-size: 1.1rem;
+    background-color: green;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: green;
+    background: wheat;
+}
