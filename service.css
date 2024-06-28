@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Nav section */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* arranges height(grey color wala)*/
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 254, 254);
+    opacity: 0.8;
+    z-index: -1;
+    /* content(home,about bla bla) will show*/
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    /* color: ; */
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    /* by default display inline huncha so block, also for padding*/
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#navbar ul li a:hover {
+    background: white;
+    color: black;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/* services section */
+#services {
+    margin-left: 30px;
+    display: flex;
+    width: 900px;
+    height: 450px;
+}
+
+#services img {
+    /* padding: 50px; */
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+.box {
+    padding-left: 120px;
+    padding-right: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 24px; 
+    border-radius: 2px;
+    background: rgb(243, 237, 237);
+    cursor: pointer;
+    height: 400px;
+
+
+
+}
+
+
+.box:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(79, 124, 27);
+}
+
+.class2 {
+    /* margin-left: 30px;
+    display: flex;
+    width: 450px;
+    height: 450px; */
+    margin-left: 30px;
+    display: flex;
+    width: 900px;
+    height: 450px;
+}
+
+
+.class2 img {
+    /* padding: 50px; */
+    height: 145px;
+    margin: auto;
+    display: block;
+    /* width: 100px; */
+}
+
+.box2 {
+    padding-left: 120px;
+    padding-right: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 24px; 
+    border-radius: 2px;
+    background: rgb(243, 237, 237);
+    cursor: pointer;
+    height: 400px;
+
+}
+
+.box2:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(52, 100, 62);
+}
+
+.class3 {
+    /* margin-left: 30px;
+    display: flex;
+    width: 450px;
+    height: 450px; */
+    margin-left: 30px;
+    display: flex;
+    width: 900px;
+    height: 450px;
+}
+
+
+.class3 img {
+    /* padding: 50px; */
+    height: 145px;
+    margin: auto;
+    display: block;
+    /* width: 100px; */
+}
+
+.box3 {
+    
+    padding-left: 120px;
+    padding-right: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 24px; 
+    border-radius: 2px;
+    background: rgb(243, 237, 237);
+    cursor: pointer;
+    height: 400px;
+
+}
+
+.box3:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(16, 102, 40);
+}
+.class4 {
+    /* margin-left: 30px;
+    display: flex;
+    width: 450px;
+    height: 450px; */
+    margin-left: 30px;
+    display: flex;
+    width: 100px;
+    height: 450px;
+}
+
+
+.class4 img {
+    /* padding: 50px; */
+    height: 145px;
+    margin: auto;
+    display: block;
+    /* width: 100px; */
+}
+
+.box4 {
+    
+    padding-left: 120px;
+    padding-right: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 24px; 
+    border-radius: 2px;
+    background: rgb(243, 237, 237);
+    cursor: pointer;
+    height: 400px;
+
+}
+
+.box4:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(56, 135, 78);
+}

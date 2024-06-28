@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Nav section */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* arranges height(grey color wala)*/
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index: -1;
+    /* content(home,about bla bla) will show*/
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    /* color: ; */
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    /* by default display inline huncha so block, also for padding*/
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#navbar ul li a:hover {
+    background: rgb(181, 22, 22);
+    color: rgb(255, 255, 255);
+}
+body{
+    width: 100%;
+    /* padding: 78px 0px; */
+    background-color: black;
+    
+}
+.about img{ 
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0, auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.about-text h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom:25px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+span{
+    color: red;
+}
+.about-text p{
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-left: 30px;
+}
+button{
+    background: #cb4f4f;
+    
+    border: 2px solid transparent;
+ 
+    font-weight: bold;
+    padding-left: 13x;
+    margin-left: 30px;
+    margin-top: 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    
+    
+}

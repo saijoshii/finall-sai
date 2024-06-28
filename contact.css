@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+
+/* Nav section */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative; /* arranges height(grey color wala)*/
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:grey;
+    opacity: 0.8;
+    z-index: -1; /* content(home,about bla bla) will show*/
+    top: 0px;
+    left: 0px;
+}
+#navbar ul li{
+    /* color: ; */
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block; /* by default display inline huncha so block, also for padding*/
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    background: white;
+    color: black;
+}
+body{
+    background:blueviolet;
+    font-size: 14px;
+}
+.container h1{
+    align-items: center;
+}
+.container{
+    width:80%;
+    margin: 50px auto;
+}
+.contactbox{
+    background: white;
+    display: flex;
+}
+.contactleft{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contactright{
+    flex-basis: 40%;
+    padding: 40px;
+   background: #1c00b5;
+    color: white ;
+}
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+        margin-bottom: 40px;
+}
+.input{
+    display: flex; /*to get in two-columns*/
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+.input.inputgroup{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none; /*removes border in name,email,phone,subject*/
+    outline: none;
+    border-bottom: 1px solid black; /*adds underline instead of box*/
+}
+textarea{
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    padding: 10px; 
+
+}
+label{
+    margin-bottom: 7px;
+    display: block;
+    color: green;
+}
+button{
+    background-color: rgb(10, 102, 10);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 17px;
+    margin-top: 10px;
+    height: 35px;
+    width: 75px;
+}
+.id{
+    background-color:red;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 17px;
+    margin-top: 10px;
+    height: 35px;
+    width: 75px;
+}
+.contactleft h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: brown ;
+    align-items: center;
+}
+.contactright h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+   
+}
+table{
+    padding-top: 30px;
+    padding-left: 23px;
+    margin-bottom: 12px;
+}
+table td{
+    padding-right: 20px;
+}

@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
 }
-.logo{
+#logo{
     margin: 3px 5px;
 }
+/* Nav section */
 #navbar{
     display: flex;
     align-items: center;
@@ -21,8 +22,10 @@
     height: 100%;
     width: 100%;
     background:grey;
-    /* opacity: 0.4; */
+    opacity: 0.8;
     z-index: -1; /* content(home,about bla bla) will show*/
+    top: 0px;
+    left: 0px;
 }
 #navbar ul li{
     /* color: ; */
@@ -39,48 +42,52 @@
     background: white;
     color: black;
 }
-#home{ /* HOME SECTION*/
+#home{ /*HOME SECTION */
     padding:3px 200px;
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    height: 400px;   
+    height: 650px;   
 }
 #home::before{  
     content: "";
     position: absolute;
-    background-image: url(bbbbb.jpg);
-    height: 100%;
+    background-image: url(bgi.webp);
+    height:106%;
     width: 100%;
-    /* background:grey; */
-    opacity: 0.78;
+    top: 0px;
+    left: 0px;
+    
+    opacity: 0.;
     z-index: -1; 
-}
-#home h1{
-    text-align: center;
-    color: white;
-}
-#home p{
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
-}
+} 
+
+/* utility classes */
 .heading{
     font-size: 3.9rem;
     padding: 10px;
+    color: white;
+    /* margin-bottom: 300px; */
   
+}
+ p{
+    color: white;
+    
 }
 .btn{
     border: 2px solid white;
-    color: white;
+    /* color: rgb(255, 255, 255); */
     font-size: 1.1rem;
-    background-color: green;
+    background-color: rgb(126, 228, 83);
     margin: 15px;
     border-radius: 8px;
     cursor: pointer;
 }
 .btn:hover{
-    color: green;
-    background: wheat;
+   
+    background: rgb(202, 233, 5);
+}
+.center{
+    text-align: center;
 }

@@ -1,36 +1,69 @@
-  
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
- /* h1{
-    text-align: center;
-    font-size: large;
-    
-}
-div{
-    text-align: center;
-    padding-left: 10px;
-    margin: 0ch; */
 
- body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: seagreen;
-    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.72)), url(login\ image.avif);
- }
- div{
-    width: 420px;
-    color: rgb(8, 202, 31);
-    background-color:  rgb(255, 255, 255);
- }
- div h1{
-    text-align: center;
-    font-size: 37px;
- }
+/* Nav section */
+#navbar{
+   display: flex;
+   align-items: center;
+   position: relative; /* arranges height(grey color wala)*/
+}
+
+#navbar ul{
+   display: flex;
+   list-style: none;
+}
+#navbar::before{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background:rgb(255, 255, 255);
+   opacity: 0.8;
+   z-index: -1; /* content(home,about bla bla) will show*/
+   top: 0px;
+   left: 0px;
+}
+#navbar ul li{
+   /* color: ; */
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+   display: block; /* by default display inline huncha so block, also for padding*/
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+}
+#navbar ul li a:hover{
+   background: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}
+
+.login{
+   background-color: rgb(255, 255, 255);
+   border: 4px solid rgb(151, 101, 243);
+   width: 380px;
+   height: 350px;
+   padding-top: 20px;
+   padding-left:50px;
+   margin-left: 539px;
+   margin-top: 40px;
+
+}
+/* form{
+   border: 1px solid green;
+   background-color: rgb(105, 33, 108);
+   width: 340px;
+   height: 300px;
+   margin-left:-8px;
+   padding-left: 12px;
+   padding-top: 8px;
+} */
+h1{
+   text-align: center;
+   color: rgb(0, 0, 0);
+   /* justify-content: center; */
+}
  
- 
+button:hover{
+   background-color: green;
+   color: white;
+}
