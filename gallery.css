@@ -80,6 +80,10 @@ body {
 
 
 }
+.box:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(16, 102, 40);
+}
 #services2 {
     margin-left: 30px;
     display: flex;
@@ -110,10 +114,9 @@ body {
 }
 
 
-
 .box1:hover {
     color: rgb(255, 255, 255);
-    background: rgb(79, 124, 27);
+    background: rgb(16, 102, 40);
 }
  
 .class3 {
