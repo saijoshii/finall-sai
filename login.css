@@ -15,7 +15,7 @@
    position: absolute;
    height: 100%;
    width: 100%;
-   background:rgb(255, 255, 255);
+   background:#b1b1c5;
    opacity: 0.8;
    z-index: -1; /* content(home,about bla bla) will show*/
    top: 0px;
@@ -60,10 +60,113 @@
 h1{
    text-align: center;
    color: rgb(0, 0, 0);
-   /* justify-content: center; */
+ 
 }
  
 button:hover{
    background-color: green;
    color: white;
+}
+.sign h2{
+   color: rgb(0, 0, 0);
+   float: right;
+}
+body{
+   background-color: #b1b1c5;
+} 
+/* Footer */
+
+/* Footer */
+.footer{
+   background-color:#24262b;
+   padding: 70px 0;   
+   margin-top: 150px;  
+   height: 50%;
+}
+.container{
+   max-width: 1200px;
+   /* background-color: red; */
+   margin: auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.column{
+   width: 25%;
+   padding: 0 15px;
+}
+.column h4{
+   font-size: 18px;
+   font-weight: 500;
+   color: #ffff;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   position: relative;
+ 
+}
+ul{
+   list-style: none;
+
+}
+.column h4::before{
+   content:" ";
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: #e91e63;
+   height: 2px;
+   box-sizing: border-box;
+   width:  50px;
+}
+.column ul li:not(:last-child)  {
+   margin-bottom: 10px;
+}
+
+.column ul li a{
+
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffff;
+   text-decoration: none;
+   font-weight: 300;
+   color: #bbb;
+   display: block;
+   transition: all 0.3s ease;
+}
+.column ul li a:hover{
+   color: #ffff;
+   padding-left: 8px;
+}
+.social a{
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: rgba(255, 255,255, 0.2);
+   margin: 0 10px 10px 0;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   color: white ;
+   transition: all 0.3s ease;
+} 
+.social a:hover{
+   background:#213e86 ;
+   color: #ffffff;
+}
+/* RESPONSIVE */
+@media(max-width:767px){
+   .column{
+       width: 25%;
+       margin-bottom: 30px; 
+
+   }
+}
+@media(max-width:574px){
+   .column{
+       width: 100%;
+       /* margin-bottom: 30px;  */
+       
+   }
+   
 }
