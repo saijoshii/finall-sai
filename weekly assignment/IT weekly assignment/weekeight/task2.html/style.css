@@ -1,0 +1,27 @@
+body{
+    font-family: Verdans, Arial, Helvetica, sans-serif;
+    font-size: 12px;   
+}
+h1{
+    color: #FF0000;
+    background-color: #00ff00;
+    font-size: 14px;
+    font-variant: small-caps;
+}
+p::first-letter{
+    font-size: 20%;
+}
+.income {
+    background-color: #CCCCCC;
+}
+.expenses{
+    background-color: #FF0000;
+
+}
+#budgetsummary {
+    background-color: #FFFFFF;
+    border: dotted;
+}
+.profit{
+    background-color: #FFFF00;
+}

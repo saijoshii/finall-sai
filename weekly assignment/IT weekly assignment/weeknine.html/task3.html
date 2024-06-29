@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            height: auto;
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+        .nav-link{
+            display: flex;
+            gap: 50px;
+            margin-right: 50px;
+        }
+        .logo{
+            border: 2px solid black;
+            padding: 5px;
+            margin-left: 15px;
+        }
+        body p{
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .line{
+            width: 100%; 
+            border: none; 
+            height: 2px; 
+            background-color: black; 
+            margin-top: 30px; 
+        }
+        .main-section{
+            margin-left: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .partner1{
+            border: 2px solid black;
+            width: fit-content;
+            text-align: center;
+        }
+        .partner1 img{
+            width: 25vw;
+            height: 35vh;
+        }
+        .main-section-2{
+            margin-left: 30px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px 0; /* Increased padding for better spacing */
+            margin-top: 20px;
+            text-align: center; /* Center align the content */
+            clear: both; /* Clear floats */
+        }
+        .sitemap {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .sitemap a {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="#">LOGO</a></div>
+        <nav class="nav-link">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Who We Work With</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <p style="text-align: right; margin-right: 50px;">Kathmandu Nepal</p>
+    <hr class="line">
+    <h1 style="text-align: center; font-size: 2.5rem;">Who Do We Work With</h1>
+
+    <section class="main-section">
+        <div class="partners">
+            <div class="partner1">
+                <img src="person-1.jpg" alt="orry the god">
+                <h1>Liam Chen</h1>
+                <p>A charismatic leader with a background <br>in business development. 
+                    He excels at<br> forging partnerships and securing funding.</p>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="partner1">
+                <img src="person-2.jpg" alt="orry the god">
+                <h1>David Hernandez</h1>
+                <p>A coding whiz who can translate complex<br> ideas into user-friendly software.</p>
+            </div>
+        </div>
+    </section>
+    <section class="main-section-2">
+        <div class="partners">
+            <div class="partner1">
+                <img src="person-3.jpg" alt="orry the god">
+                <h1>Liam Chen</h1>
+                <p>A charismatic leader with a background <br>in business development. 
+                    He excels at<br> forging partnerships and securing funding.</p>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="partner1">
+                <img src="person-4.jpg" alt="orry the god">
+                <h1>David Hernandez</h1>
+                <p>A coding whiz who can translate complex<br> ideas into user-friendly software.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="sitemap">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Who We Work With</a>
+            <a href="#">Contact</a>
+        </div>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

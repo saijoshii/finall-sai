@@ -1,0 +1,11 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #CCFFFF;
+}
+H1{
+    font-size: 14px;
+    font-variant: small-caps;
+    color: #FF0000;
+    background-color: #00ff00;
+}
