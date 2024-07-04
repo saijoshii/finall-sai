@@ -7,32 +7,22 @@
 }
 /* Nav section */
 #navbar{
-    display: flex;
+    display: flex; 
     align-items: center;
-    position: relative; /* arranges height(grey color wala)*/
+    /* position: relative; arranges height(grey color wala) */
 }
 
 #navbar ul{
     display: flex;
     list-style: none;
 }
-#navbar::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background:grey;
-    opacity: 0.8;
-    z-index: -1; /* content(home,about bla bla) will show*/
-    top: 0px;
-    left: 0px;
-}
+ 
 #navbar ul li{
-    /* color: ; */
+   
     font-size: 1.3rem;
 }
 #navbar ul li a{
-    display: block; /* by default display inline huncha so block, also for padding*/
+    /* display: block; by default display inline huncha so block, also for padding */
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
@@ -44,23 +34,21 @@
     
 }
 #home{ /*HOME SECTION */
-    padding:3px 200px;
+    padding:3px 200px; /*3px top and bottom and 200px left right*/
     display: flex; 
-    flex-direction: column;
+    flex-direction: column; /* arranging vertically*/
     align-items: center;
-    justify-content: center; 
+    justify-content: center; /*vertically center*/
     height: 650px;   
 }
-#home::before{  
-    content: "";
+#home::before{   /*pseudo element*/
+    content: ""; /*pseudo element need this*/
     position: absolute;
     background-image: url(bgi.webp);
-    height:106%;
+    height:110%;
     width: 100%;
     top: 0px;
-    left: 0px;
-    
-    opacity: 0.;
+    left: 0px;      
     z-index: -1; 
 } 
 body{
@@ -95,13 +83,12 @@ body{
 .btn a{
     text-decoration: none;
 }
-.center{
-    text-align: center;
-}
+ 
 /* Footer */
 .footer{
     background-color:#24262b;
-    padding: 70px 0;     
+    padding: 70px 0;   
+ 
 }
 .container{
     max-width: 1170px;
@@ -139,19 +126,19 @@ ul{
     box-sizing: border-box;
     width:  50px;
 }
-.column ul li:not(:last-child)  {
-    margin-bottom: 10px;
+.column ul li:not(:last-child)  { /*Within those unordered lists, targets all list items (li) except the last one.*/    
+    margin-bottom: 10px; /*space betwn about us contact FAQ ETXC*/
 }
 
 .column ul li a{
-
+    margin-bottom:10px;
     font-size: 16px;
     text-transform: capitalize;
     color: #ffff;
-    text-decoration: none;
+    text-decoration: none;  
     font-weight: 300;
     color: #bbb;
-    display: block;
+    /* display: block; */
     transition: all 0.3s ease;
 }
 .column ul li a:hover{
@@ -174,19 +161,5 @@ ul{
     background:#213e86 ;
     color: #ffffff;
 }
-/* RESPONSIVE */
-@media(max-width:767px){
-    .column{
-        width: 25%;
-        margin-bottom: 30px; 
-
-    }
-}
-@media(max-width:574px){
-    .column{
-        width: 100%;
-        /* margin-bottom: 30px;  */
-        
-    }
-    
-}
+ 
+ 

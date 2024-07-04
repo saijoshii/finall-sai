@@ -16,17 +16,7 @@
     display: flex;
     list-style: none;
 }
-#navbar::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background:#646e7c;
-    opacity: 0.8;
-    z-index: -1; /* content(home,about bla bla) will show*/
-    top: 0px;
-    left: 0px;
-}
+ 
 #navbar ul li{
     /* color: ; */
     font-size: 1.3rem;
@@ -70,18 +60,16 @@ body{
 h1{
     margin-bottom: 10px;
 }
-.container p{
+/* .container p{
         margin-bottom: 40px;
-}
+} */
 .input{
     display: flex; /*to get in two-columns*/
     justify-content: space-between;
     margin-bottom: 25px;
 
 }
-.input.inputgroup{
-    flex-basis: 45%;
-}
+ 
 input{
     width: 100%;
     border: none; /*removes border in name,email,phone,subject*/
@@ -141,7 +129,7 @@ table td{
 }
 /* Footer */
 .footer{
-    margin-top: 70px;
+    margin-top: 170px;
     background-color:#343537;
     padding: 70px 0;     
 }
@@ -193,7 +181,7 @@ ul{
     text-decoration: none;
     font-weight: 300;
     color: #bbb;
-    display: block;
+    /* display: block; */
     transition: all 0.3s ease;
 }
 .column ul li a:hover{
@@ -216,19 +204,4 @@ ul{
     background:#213e86 ;
     color: #ffffff;
 }
-/* RESPONSIVE */
-@media(max-width:767px){
-    .column{
-        width: 25%;
-        margin-bottom: 30px; 
-
-    }
-}
-@media(max-width:574px){
-    .column{
-        width: 100%;
-        /* margin-bottom: 30px;  */
-        
-    }
-    
-}
+ 

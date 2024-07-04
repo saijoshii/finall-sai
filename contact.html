@@ -8,77 +8,104 @@
     <title>Contact us</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("QgL-g_RpGd7D1fgaW"); /*public key*/
+       })();
+    </script>
+    <script type="text/javascript">
+        function sendMail(event) {
+            event.preventDefault();  // Prevent the default form submission
+            var params = {
+                name: document.getElementById("name").value,
+                phone: document.getElementById("phone").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            };
+            const serviceID = "service_zhxm059";
+            const templateID = "template_8glcufe";
+
+            emailjs.send(serviceID, templateID, params)
+            .then(
+                res => {
+                    document.getElementById("name").value = "";
+                    document.getElementById("phone").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("subject").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("Message sent successfully");
+                }
+            )
+            .catch(err => console.log(err));
+        }
+    </script>
 </head>
- 
+
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="logo.png" width="59px" height="72px"alt="my website ok">
+            <img src="logo.png" width="59px" height="72px" alt="my website ok">
         </div>
         <ul>
             <li class="item"><a href="index.html">Home</a></li>
             <li class="item"><a href="gallery.html">Items</a></li>
-            <!-- <li class="item"><a href="reward.html">Reward</a></li> -->
             <li class="item"><a href="about.html">About</a></li>
             <li class="item"><a href="contact.html">Contact us</a></li>
-            <li class="item"><a href="login.html" target="_blank">Sign in  </a></li>
+            <li class="item"><a href="login.html" target="_blank">Sign in</a></li>
         </ul>
-        
     </nav>
     <div class="container">
-        <h1 style="color:rgb(0, 0, 0);text-align:center;">CONTACT US PAGE </h1>
- 
+        <h1 style="color:rgb(0, 0, 0);text-align:center;">CONTACT US PAGE</h1>
+
         <div class="contactbox">
             <div class="contactleft">
-                <h3> FEEL FREE TO CONTACT US </h3>
-                <form> 
+                <h3>FEEL FREE TO CONTACT US</h3>
+                <form onsubmit="sendMail(event)">
                     <div class="input">
-                        <div class="inputgroup"> 
-                            <label> Name</label>
-                            <input type="text" placeholder="XYZ">
+                        <div class="inputgroup">
+                            <label>Name</label>
+                            <input type="text" id="name" placeholder="XYZ">
                         </div>
-                        <div class="inputgroup"> 
-                            <label> Phone</label>
-                            <input type="text" placeholder="+977-0123456789">
+                        <div class="inputgroup">
+                            <label>Phone</label>
+                            <input type="text" id="phone" placeholder="+977-0123456789">
                         </div>
                     </div>
                     <div class="input">
-                        <div class="inputgroup"> 
-                            <label> Email</label>
-                            <input type="text" placeholder="XYZ@gmail.com">
+                        <div class="inputgroup">
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="XYZ@gmail.com">
                         </div>
-                        <div class="inputgroup"> 
-                            <label> Subject</label>
-                            <input type="text" placeholder="subject">
+                        <div class="inputgroup">
+                            <label>Subject</label>
+                            <input type="text" id="subject" placeholder="subject">
                         </div>
                     </div>
-                    <label> Message</label>
-                    <textarea rows="5" placeholder="type your queries"></textarea>
-                 
-
-                        <button> Send</button>
-                        <button class="id"> discard</button>
-                    
-                   
+                    <label>Message</label>
+                    <textarea rows="5" id="message" placeholder="type your queries"></textarea>
+                    <button type="submit">Send</button>
+                    <button  class="id"type="button" onclick="this.form.reset();">Discard</button>
                 </form>
             </div>
             <div class="contactright">
-                <h3> Locate  us</h3>
+                <h3>Locate us</h3>
                 <img src="map.webp" height="250px" width="400px" alt="">
                 <table>
                     <tr>
-                        <td> Email</td>
-                        <td> royaltea@gmail.com</td>
+                        <td>Email</td>
+                        <td>royaltea298@gmail.com</td>
                     </tr>
                     <tr>
-                        <td> location</td>
-                        <td> Walker Art center, Chabahil</td>
+                        <td>Location</td>
+                        <td>Walker Art center, Chabahil</td>
                     </tr>
                     <tr>
-                        <td> Numbers</td>
+                        <td>Numbers</td>
                         <td>+977-9841075954 , +977-9823511276, 01-4595363</td>
                     </tr>
-                    
                 </table>
             </div>
         </div>
@@ -94,18 +121,16 @@
                     </ul>
                 </div>
                 <div class="column">
-                    <h4 >Get Help </h4>
+                    <h4>Get Help</h4>
                     <ul>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Shipping</a></li>
                         <li><a href="gallery.html">Order</a></li>
-
                     </ul>
                 </div>
-                
                 <div class="column">
-                    <h4> Follow us </h4>
+                    <h4>Follow us</h4>
                     <div class="social">
                         <a href="https://www.instagram.com/sdjoshii/"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -116,7 +141,7 @@
                 </div>
             </div>
         </div>
-     </footer>
+    </footer>
 </body>
 
 </html>
